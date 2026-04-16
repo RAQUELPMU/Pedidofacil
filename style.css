@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    color: #1a1a2e;
+    background: #fff;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Navbar */
+.navbar {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 16px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo-icon { font-size: 28px; }
+.logo-text { color: #1a1a2e; }
+.highlight { color: #e67e22; }
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1a1a2e;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover { color: #e67e22; }
+
+.btn-mobile { display: none; }
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, #fff5eb 0%, #ffe8d9 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.offer-badge {
+    display: inline-block;
+    background: #e67e22;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.2;
+}
+
+.discount {
+    background: linear-gradient(135deg, #e67e22, #d35400);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.hero-description {
+    font-size: 18px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 16px;
+}
+
+.validity {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 32px;
+}
+
+.btn-primary {
+    background: #e67e22;
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background: #d35400;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(230,126,34,0.3);
+}
+
+.btn-large { font-size: 18px; padding: 16px 40px; }
+
+/* Planos */
+.plans {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.plans h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 48px;
+}
+
+.plans-grid {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.plan-card {
+    background: white;
+    border-radius: 24px;
+    padding: 32px;
+    width: 360px;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.plan-card:hover { transform: translateY(-8px); }
+
+.plan-card.featured {
+    border: 2px solid #e67e22;
+    box-shadow: 0 12px 30px rgba(230,126,34,0.15);
+}
+
+.plan-badge {
+    position: absolute;
+    top: -12px;
+    left: 32px;
+    background: #e67e22;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.plan-badge.premium { background: #d35400; }
+
+.plan-card h3 {
+    font-size: 24px;
+    margin: 16px 0 24px;
+}
+
+.price { margin-bottom: 8px; }
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 16px;
+}
+.new-price {
+    font-size: 36px;
+    font-weight: 800;
+    color: #e67e22;
+}
+.period { font-size: 14px; color: #666; }
+.savings {
+    color: #27ae60;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.plan-features {
+    list-style: none;
+    margin: 24px 0;
+    space-y: 12px;
+}
+.plan-features li {
+    padding: 8px 0;
+    color: #444;
+}
+
+.btn-plan {
+    width: 100%;
+    padding: 14px;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-plan-premium {
+    background: #e67e22;
+    color: white;
+}
+
+.btn-plan:hover { background: #e67e22; color: white; }
+
+/* Formulário */
+.test-form {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: white;
+}
+
+.form-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.05);
+    border-radius: 32px;
+    padding: 48px;
+    backdrop-filter: blur(10px);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+.form-header h2 { font-size: 32px; margin-bottom: 8px; }
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 200px;
+}
+.form-group.full-width { flex: 100%; }
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.1);
+    border-radius: 12px;
+    color: white;
+    font-size: 14px;
+}
+
+.form-group input::placeholder { color: rgba(255,255,255,0.6); }
+
+.btn-submit {
+    width: 100%;
+    padding: 16px;
+    background: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.form-note {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+/* Social proof */
+.social-proof {
+    padding: 60px 0;
+    background: #fff;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+.stat-item { text-align: center; }
+.stat-number {
+    font-size: 48px;
+    font-weight: 800;
+    color: #e67e22;
+}
+.stat-label { color: #666; font-weight: 500; }
+
+.trust-badge {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    color: #888;
+    font-size: 14px;
+}
+
+footer {
+    background: #1a1a2e;
+    color: white;
+    padding: 24px;
+    text-align: center;
+}
