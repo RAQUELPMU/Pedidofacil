@@ -3,9 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anota.ai Clone | Sistema para Restaurantes</title>
+    <title>Anota.ai - Sistema completo para restaurantes</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos adicionais para as novas seções */
+        .comparison-table {
+            background: white;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            margin: 40px 0;
+        }
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .comparison-table th {
+            background: #1a1a2e;
+            color: white;
+            padding: 20px;
+            font-size: 18px;
+            text-align: center;
+        }
+        .comparison-table td {
+            padding: 16px 20px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+        .comparison-table td:first-child {
+            text-align: left;
+            font-weight: 600;
+            background: #f8f9fa;
+        }
+        .check-yes {
+            color: #27ae60;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .check-no {
+            color: #e74c3c;
+            font-size: 24px;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .feature-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #1a1a2e;
+        }
+        .feature-card p {
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(135deg, #fff5eb, #ffe8d9);
+            padding: 30px;
+            border-radius: 20px;
+            margin: 20px 0;
+        }
+        .testimonial-text {
+            font-size: 18px;
+            font-style: italic;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .testimonial-author {
+            font-weight: 700;
+            color: #e67e22;
+        }
+        
+        .compatibility-badge {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 30px 0;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .transform-section {
+            background: linear-gradient(135deg, #e67e22, #d35400);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            border-radius: 30px;
+            margin: 50px 0;
+        }
+        .transform-section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .transform-section p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+    </style>
 </head>
 <body>
 
@@ -24,6 +140,7 @@
     </div>
 </nav>
 
+<!-- Hero Section -->
 <section class="hero">
     <div class="container">
         <div class="offer-badge">🔥 Oferta relâmpago</div>
@@ -34,6 +151,77 @@
     </div>
 </section>
 
+<!-- Tabela Comparativa -->
+<section class="container">
+    <h2 style="text-align: center; margin: 50px 0 20px;">Com Anota.ai vs Sem Anota.ai</h2>
+    <div class="comparison-table">
+        <table>
+            <thead>
+                <tr><th></th><th>Com Anota.ai</th><th>Sem Anota.ai</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Atendimento de clientes</td><td class="check-yes">✅ Automatizado</td><td class="check-no">❌ Manual</td></tr>
+                <tr><td>Economia de tempo</td><td class="check-yes">✅ Até 60%</td><td class="check-no">❌ Nenhum</td></tr>
+                <tr><td>Ganho de faturamento</td><td class="check-yes">✅ Até 50%</td><td class="check-no">❌ Nenhum</td></tr>
+                <tr><td>Falhas humanas</td><td class="check-yes">✅ Inexistente</td><td class="check-no">❌ Frequente</td></tr>
+                <tr><td>Controle financeiro</td><td class="check-yes">✅</td><td class="check-no">❌</td></tr>
+                <tr><td>Emissão de notas fiscais</td><td class="check-yes">✅</td><td class="check-no">❌</td></tr>
+                <tr><td>Gestor de Pedidos e Relatório</td><td class="check-yes">✅</td><td class="check-no">❌</td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- Funcionalidades -->
+<section class="container">
+    <h2 style="text-align: center; margin: 50px 0 20px;">Para vendas no restaurante</h2>
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">🤖</div>
+            <h3>Atendimento automatizado</h3>
+            <p>Atenda seus clientes automaticamente nos aplicativos que eles mais usam e potencialize as suas vendas em diversos canais.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">📱</div>
+            <h3>Cardápio Digital</h3>
+            <p>Dê autonomia aos seus clientes para pedirem seus pratos favoritos com facilidade e rapidez, diretamente de casa!</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🔄</div>
+            <h3>Recuperador de vendas</h3>
+            <p>Recupere clientes com mensagens automáticas e incentive o retorno ao cardápio.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">💳</div>
+            <h3>Pagamento Online</h3>
+            <p>Receba por PIX ou Crédito direto no cardápio. Simples, seguro e eficiente.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Depoimentos -->
+<section class="container">
+    <h2 style="text-align: center; margin: 50px 0 20px;">O que nossos clientes dizem</h2>
+    <div class="testimonial-card">
+        <div class="testimonial-text">"O Anota.ai transformou meu negócio! Aumentei minhas vendas em 40% no primeiro mês. Recomendo demais!"</div>
+        <div class="testimonial-author">⭐ Airton Gourmet</div>
+    </div>
+    <div class="testimonial-card">
+        <div class="testimonial-text">"Atendimento automatizado salvou meu restaurante. Economizo horas por dia e não perco mais pedidos."</div>
+        <div class="testimonial-author">⭐ Aston Lam</div>
+    </div>
+</section>
+
+<!-- Seção Transforme -->
+<section class="container">
+    <div class="transform-section">
+        <h2>🚀 Transforme a experiência dos seus pedidos com a Anota.ai</h2>
+        <p>Junte-se a mais de 50 mil restaurantes que já aumentaram seu faturamento</p>
+        <a href="login.html"><button style="background: white; color: #e67e22; border: none; padding: 15px 40px; border-radius: 50px; font-size: 18px; font-weight: 700; cursor: pointer;">Teste grátis por 7 dias →</button></a>
+    </div>
+</section>
+
+<!-- Planos -->
 <section class="plans">
     <div class="container">
         <h2>Escolha o plano ideal para seu negócio</h2>
@@ -82,6 +270,7 @@
     </div>
 </section>
 
+<!-- Formulário de Lead -->
 <section class="test-form">
     <div class="container">
         <div class="form-wrapper">
@@ -146,6 +335,10 @@
                     </div>
                 </div>
 
+                <div class="compatibility-badge">
+                    ⚠️ Antes de contratar, verifique se o seu dispositivo é compatível com as funcionalidades da plataforma.
+                </div>
+
                 <button type="submit" class="btn-submit">Testar grátis por 7 dias →</button>
                 <p class="form-note">Sem compromisso. Não pedimos dados de cartão.</p>
             </form>
@@ -155,6 +348,7 @@
     </div>
 </section>
 
+<!-- Social Proof -->
 <section class="social-proof">
     <div class="container">
         <div class="stats">
@@ -176,7 +370,8 @@
 
 <footer>
     <div class="container">
-        <p>© 2024 Anota.ai Clone - Sistema inspirado para restaurantes</p>
+        <p>© 2024 Anota.ai Clone - Sistema completo para restaurantes</p>
+        <p style="margin-top: 10px; font-size: 12px;">📞 Dúvidas? Chame no WhatsApp</p>
     </div>
 </footer>
 
